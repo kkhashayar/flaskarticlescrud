@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<br>
+  <h3 style="color:green">{{article.title}}</h3>
+  <small>Posted by {{article.author}} on {{article.create_date}}</small>
+  <hr>
+  <div class="content" style="background-color:#eaede1">
+    {{article.body |safe}}
+  </div>
+{% endblock %}
